@@ -1,0 +1,13 @@
+label,
+input {
+  cursor: pointer;
+}
+.small-input-font {
+  font-size: $font-size-base * 0.8;
+}
+p {
+  font-size: $font-size-lg;
+}
+.p-muted {
+  font-size: $font-size-base;
+}

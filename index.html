@@ -8,98 +8,903 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-          <h1 class="text-center text-muted my-3">Matchmake Me</h1>
-          <a class="btn btn-sm btn-outline-primary mb-5" href="#" role="button"
-            >Back</a
-          >
-          <div class="col-12 d-flex mb-3">
-            <img
-              src="style/Images/guy3.jpg"
-              width="60%"
-              height="auto"
-              style="border-radius: 0.75rem"
-            />
+        <div
+          class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+        >
+          <h1 class="text-center text-muted mt-3 mb-5">Matchmake Me</h1>
+
+          <form>
+            <div class="form-row">
+              <div class="col-8 mb-1">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Birthdate"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div class="form-row">
+            <div class="col-4 col-md-4 col-xl-3">
+              <p class="d-inline text-muted">You identify as:</p>
+            </div>
+            <div class="col-8 col-md-8 col-xl-9">
+              <div class="custom-control custom-radio d-inline mr-4">
+                <input
+                  type="radio"
+                  id="identify_female"
+                  name="identify"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="identify_female"
+                  >Female</label
+                >
+              </div>
+              <div class="custom-control custom-radio d-inline">
+                <input
+                  type="radio"
+                  id="identify_male"
+                  name="identify"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="identify_male"
+                  >Male</label
+                >
+              </div>
+            </div>
           </div>
-          <h5 class="mb-3" style="line-height: 150%">
-            ID: flying_panda<br />Age: 29
-          </h5>
-          <h6>How important is healthy eating to you?</h6>
-          <h6 class="text-muted">Somewhat important</h6>
+          <div class="form-row">
+            <div class="col-4 col-md-4 col-xl-3">
+              <p class="d-inline text-muted">Looking for:</p>
+            </div>
+            <div class="col-8 col-md-8 col-xl-9">
+              <div class="custom-control custom-radio d-inline mr-4">
+                <input
+                  type="radio"
+                  id="identify_female"
+                  name="identify"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="identify_female"
+                  >Female</label
+                >
+              </div>
+              <div class="custom-control custom-radio d-inline">
+                <input
+                  type="radio"
+                  id="identify_male"
+                  name="identify"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="identify_male"
+                  >Male</label
+                >
+              </div>
+            </div>
+          </div>
           <br />
-          <h6>How important are your spiritual/religious beliefs to you?</h6>
-          <h6 class="text-muted">Extremely important</h6>
+
+          <h4 class="mt-5">
+            Answer these questions honestly to get the best matches.
+          </h4>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-3">
+              <p>How important is healthy eating to you?</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="healthy-lifestyle-1"
+                  name="healthy-lifestyle"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="healthy-lifestyle-1"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="healthy-lifestyle-2"
+                  name="healthy-lifestyle"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="healthy-lifestyle-2"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="healthy-lifestyle-3"
+                  name="healthy-lifestyle"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="healthy-lifestyle-3"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="healthy-lifestyle-4"
+                  name="healthy-lifestyle"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="healthy-lifestyle-4"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <label
+                for="healthy-lifestyle-1"
+                class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3">
+              <label
+                for="healthy-lifestyle-2"
+                class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3">
+              <label
+                for="healthy-lifestyle-3"
+                class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3">
+              <label
+                for="healthy-lifestyle-4"
+                class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
           <br />
-          <h6>
-            How important is it for you to climb the ladder at your job and get
-            promotions?
-          </h6>
-          <h6 class="text-muted">A little important</h6>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-5">
+              <p>How important are your spiritual/religious beliefs to you?</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-beliefs-1"
+                  name="religious-beliefs"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-beliefs-1"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-beliefs-2"
+                  name="religious-beliefs"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-beliefs-2"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-beliefs-3"
+                  name="religious-beliefs"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-beliefs-3"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-beliefs-4"
+                  name="religious-beliefs"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-beliefs-4"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-beliefs-1"
+                class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-beliefs-2"
+                class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-beliefs-3"
+                class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-beliefs-4"
+                class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
           <br />
-          <h6>How important is exercise or working out to you?</h6>
-          <h6 class="text-muted">Somewhat important</h6>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-5">
+              <p>
+                How important is it for you to climb the ladder at your job and
+                get promotions?
+              </p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="work-promotions-1"
+                  name="work-promotions"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="work-promotions-1"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="work-promotions-2"
+                  name="work-promotions"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="work-promotions-2"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="work-promotions-3"
+                  name="work-promotions"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="work-promotions-3"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="work-promotions-4"
+                  name="work-promotions"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="work-promotions-4"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="work-promotions-1"
+                class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="work-promotions-2"
+                class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="work-promotions-3"
+                class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="work-promotions-4"
+                class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
           <br />
-          <h6>
-            How important is it to you to participate in spiritual/religious
-            activities?
-          </h6>
-          <h6 class="text-muted">Extremely important</h6>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-5">
+              <p>How important is exercise or working out to you?</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="working-out-1"
+                  name="working-out"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="working-out-1"></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="working-out-2"
+                  name="working-out"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="working-out-2"></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="working-out-3"
+                  name="working-out"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="working-out-3"></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="working-out-4"
+                  name="working-out"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="working-out-4"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+              <label for="working-out-1" class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label for="working-out-2" class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label for="working-out-3" class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label for="working-out-4" class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
           <br />
-          <h6>
-            How important is it that other people notice and admire your
-            accomplishments?
-          </h6>
-          <h6 class="text-muted">Not really important</h6>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-5">
+              <p>
+                How important is it to you to participate in spiritual/religious
+                activities?
+              </p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-activites-1"
+                  name="religious-activities"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-activites-1"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-activities-2"
+                  name="religious-activities"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-activities-2"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-activities-3"
+                  name="religious-activities"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-activities-3"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="religious-activities-4"
+                  name="religious-activities"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="religious-activities-4"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-activites-1"
+                class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-activities-2"
+                class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-activities-3"
+                class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="religious-activities-4"
+                class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
           <br />
-          <h6>Which political topics are most important to you?</h6>
-          <h6 class="text-muted">
-            <ul>
-              <li>Racial Injustice</li>
-              <li>Illegal Immigration</li>
-            </ul>
-          </h6>
-          <h6>Which political topics are least important to you?</h6>
-          <h6 class="text-muted">
-            <ul>
-              <li>Climate Change</li>
-              <li>Drugs</li>
-            </ul>
-          </h6>
-          <h6>Which spiritual/religious beliefs are closest to your own?</h6>
-          <h6 class="text-muted">Christian / Protestant</h6>
+          <div class="row">
+            <div class="col-12 mb-n3 mt-5">
+              <p>
+                How important is it that other people notice and admire your
+                accomplishments?
+              </p>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="accomplishments-1"
+                  name="accomplishments"
+                  value="1"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="accomplishments-1"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="accomplishments-2"
+                  name="accomplishments"
+                  value="2"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="accomplishments-2"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="accomplishments-3"
+                  name="accomplishments"
+                  value="3"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="accomplishments-3"
+                ></label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div
+                class="custom-control custom-radio d-flex justify-content-center"
+              >
+                <input
+                  type="radio"
+                  id="accomplishments-4"
+                  name="accomplishments"
+                  value="4"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label"
+                  for="accomplishments-4"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="accomplishments-1"
+                class="text-center small-input-font"
+                >Not at all important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="accomplishments-2"
+                class="text-center small-input-font"
+                >Not really important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="accomplishments-3"
+                class="text-center small-input-font"
+                >Somewhat important</label
+              >
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <label
+                for="accomplishments-4"
+                class="text-center small-input-font"
+                >Extremely important</label
+              >
+            </div>
+          </div>
+
           <br />
-          <h6 class="d-inline">Relationship Status:</h6>
-          <h6 class="text-muted d-inline">Never married</h6>
+
+          <p class="mt-5">
+            Which political topics are <em>most</em> important to you?
+          </p>
+          <p class="text-muted p-muted mt-n3">(Choose 2)</p>
+
+          <div class="row">
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-racial-injustice"
+                />
+
+                <label class="custom-control-label" for="most-racial-injustice"
+                  >Racial Injustice</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-health-care"
+                />
+                <label class="custom-control-label" for="most-health-care"
+                  >Affordable Health Care</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-immigration"
+                />
+                <label class="custom-control-label" for="most-immigration"
+                  >Illegal Immigration</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-climate"
+                />
+                <label class="custom-control-label" for="most-climate"
+                  >Climate Change</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-security"
+                />
+                <label class="custom-control-label" for="most-security"
+                  >National Security</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="most-guns"
+                />
+                <label class="custom-control-label" for="most-guns"
+                  >Gun Rights</label
+                >
+              </div>
+            </div>
+          </div>
           <br />
+          <p class="mt-5">
+            Which political topics are <em>least</em> important to you?
+          </p>
+          <p class="text-muted p-muted mt-n3">(Choose 2)</p>
+          <div class="row">
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-racial-injustice"
+                />
+
+                <label class="custom-control-label" for="least-racial-injustice"
+                  >Racial Injustice</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-health-care"
+                />
+                <label class="custom-control-label" for="least-health-care"
+                  >Affordable Health Care</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-immigration"
+                />
+                <label class="custom-control-label" for="least-immigration"
+                  >Illegal Immigration</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-climate"
+                />
+                <label class="custom-control-label" for="least-climate"
+                  >Climate Change</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-security"
+                />
+                <label class="custom-control-label" for="least-security"
+                  >National Security</label
+                >
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-guns"
+                />
+                <label class="custom-control-label" for="least-guns"
+                  >Gun Rights</label
+                >
+              </div>
+            </div>
+          </div>
           <br />
-          <h6 class="d-inline">Do you have any kids?</h6>
-          <h6 class="text-muted d-inline">No</h6>
-          <br />
-          <br />
-          <h6 class="d-inline">Do you want to have kids in the future?</h6>
-          <h6 class="text-muted d-inline">Yes</h6>
-          <br />
-          <br />
-          <h6 class="d-inline">How often do you smoke?</h6>
-          <h6 class="text-muted d-inline">Never</h6>
-          <br />
-          <br />
-          <h6 class="d-inline">How often do you drink?</h6>
-          <h6 class="text-muted d-inline">A couple times a year</h6>
-          <br />
-          <br />
-          <h6>What are your main interests?</h6>
-          <h6 class="text-muted">
-            <ul>
-              <li>Sports</li>
-              <li>Volunteering</li>
-            </ul>
-          </h6>
-          <br />
-          <button class="btn btn-primary">Schedule a date</button>
-          <br /><br /><br />
+          <p>
+            Which spiritual/religious beliefs are closest to your own currently:
+            Atheist, Spiritual but not religious, Agnostic, Catholic, Christian
+            / Protestant, Buddhist / Taoist, Hindu, Muslim / Islam, Other
+          </p>
+          <p>
+            Relationship Status: never married, currently separated, divorced,
+            widowed
+          </p>
+          <p>Do you have any kids: no yes</p>
+          <p>
+            Do you want to have kids (or more kids) in the future: yes no maybe
+          </p>
+          <p>
+            How often do you smoke: never a couple times a year weekly daily
+          </p>
+          <p>
+            How often do you drink: never a couple times a year weekly daily
+          </p>
+          <p>
+            What are your main interests? (Choose 2) cooking; watching tv or
+            movies; reading; creating (art, design, music); working out; video
+            games; board / card games; sports; outdoor activities; volunteering;
+            meditation / yoga; religious activities
+          </p>
+          <p>
+            Please upload an unedited non-filtered photo matching the following
+            pose Picture of example pose Upload Continue Go Back
+          </p>
         </div>
       </div>
+      <a href="match.html">Match</a>
     </div>
   </body>
 </html>

@@ -9909,5 +9909,21 @@ h3 {
     border-color: #dee2e6;
   }
 }
+label,
+input {
+  cursor: pointer;
+}
+
+.small-input-font {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.p-muted {
+  font-size: 1rem;
+}
 
 /*# sourceMappingURL=dist.css.map */
