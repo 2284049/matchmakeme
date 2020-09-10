@@ -1,1 +1,24 @@
+// SPACING
 
+// $spacer is used for font sizes, thus rem is preferred
+// $spacers are used for paddings and margins and px are preferred
+
+$spacer: 1rem; // 16px in most browsers
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0px,
+    1: 4px,
+    2: 8px,
+    3: 12px,
+    4: 16px,
+    5: 24px,
+    6: 32px,
+    7: 48px,
+    8: 64px,
+    9: 128px,
+  ),
+  $spacers
+);
+
+$paragraph-margin-bottom: 0;
