@@ -36,6 +36,18 @@ $red-700: #770d26;
 $red-800: #500416;
 $red-900: #290505;
 
+// orange vivid
+$orange-vivid-050: #ffe8d9;
+$orange-vivid-100: #ffd0b5;
+$orange-vivid-200: #ffb088;
+$orange-vivid-300: #ff9466;
+$orange-vivid-400: #f9703e;
+$orange-vivid-500: #f35627;
+$orange-vivid-600: #de3a11;
+$orange-vivid-700: #c52707;
+$orange-vivid-800: #ad1d07;
+$orange-vivid-900: #841003;
+
 // magenta
 $magenta-050: #f5e1f7;
 $magenta-100: #ecbdf2;
@@ -68,6 +80,9 @@ $blue: $blue-600;
 $red: $red-600;
 $gray: $gray-600;
 $wine: $magenta-700;
+$bright-purple: $magenta-300;
+$bright-orange: $orange-vivid-500;
+$dark-purple: $magenta-800;
 
 $colors: ();
 $colors: map-merge(
@@ -78,15 +93,18 @@ $colors: map-merge(
     "gray": $gray,
     "gray-dark": $gray-800,
     "wine": $wine,
+    "bright-purple": $bright-purple,
+    "bright-orange": $bright-orange,
+    "dark-purple": $dark-purple,
   ),
   $colors
 );
 
 $primary: $wine;
-$secondary: $gray-700;
-$success: $blue;
+$secondary: $bright-purple;
+$success: $dark-purple;
 $danger: $red;
-$light: $gray-100;
+$light: $white;
 $dark: $gray-800;
 
 $theme-colors: ();
@@ -102,10 +120,19 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+// LINKS
+
+$link-color: theme-color("secondary");
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15%;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 $font-family-brand: "Poppins";
 
-$h1-font-size: $font-size-base * 4;
+$h1-font-size: $font-size-base * 3.5;
 
 // SPACING
 
@@ -131,6 +158,56 @@ $spacers: map-merge(
 );
 
 $paragraph-margin-bottom: 0;
+
+// BUTTONS AND INPUTS
+
+$input-btn-padding-y: map-get($spacers, 2);
+$input-btn-padding-x: map-get($spacers, 4);
+$input-btn-font-size: $font-size-base;
+$input-btn-line-height: $line-height-base;
+
+$input-btn-padding-y-sm: map-get($spacers, 1);
+$input-btn-padding-x-sm: map-get($spacers, 4);
+$input-btn-font-size-sm: $font-size-base;
+$input-btn-line-height-sm: $line-height-base;
+
+$input-btn-padding-y-lg: map-get($spacers, 2);
+$input-btn-padding-x-lg: map-get($spacers, 6);
+$input-btn-font-size-lg: $font-size-base;
+$input-btn-line-height-lg: $line-height-base;
+
+// BUTTONS
+
+$btn-font-weight: $font-weight-bold;
+
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-line-height: $line-height-base;
+
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+$btn-line-height-sm: $line-height-base;
+
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-line-height-lg: $line-height-base;
+
+// INPUTS
+
+$input-padding-y: $input-btn-padding-y;
+$input-padding-x: $input-btn-padding-x;
+$input-font-size: $font-size-base;
+$input-line-height: $line-height-base;
+
+$input-padding-y-sm: $input-btn-padding-y-sm;
+$input-padding-x-sm: $input-btn-padding-x-sm;
+$input-font-size-sm: $font-size-base;
+$input-line-height-sm: $line-height-base;
+
+$input-padding-y-lg: $input-btn-padding-y-lg;
+$input-padding-x-lg: $input-btn-padding-x-lg;
+$input-font-size-lg: $font-size-base;
+$input-line-height-lg: $line-height-base;
 
 /*
 I've included a class called .background-image that is how you can perfectly fill a webpage with a background image.

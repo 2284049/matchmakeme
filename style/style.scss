@@ -6,6 +6,53 @@
   opacity: 0.9;
 }
 
+h1 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base * 2.5;
+    margin-top: 8px;
+  }
+  @include media-breakpoint-only(sm) {
+    font-size: $font-size-base * 2.7;
+    margin-top: 10px;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $font-size-base * 2.9;
+    margin-top: 10px;
+  }
+}
+
+.logo-image {
+  @include media-breakpoint-only(xs) {
+    width: 45px;
+    margin-right: 5px;
+  }
+  @include media-breakpoint-only(sm) {
+    width: 50px;
+    margin-right: 5px;
+  }
+  @include media-breakpoint-only(md) {
+    width: 55px;
+    margin-right: 5px;
+  }
+}
+
+.schedule-button {
+  position: fixed;
+  top: 75px;
+  right: 5px;
+  @include media-breakpoint-only(sm) {
+    right: 20px;
+  }
+  @include media-breakpoint-only(md) {
+    right: 80px;
+  }
+  @include media-breakpoint-only(lg) {
+    right: 175px;
+  }
+  @include media-breakpoint-only(xl) {
+    right: 225px;
+  }
+}
 .text-brand {
   font-family: $font-family-brand;
 }
@@ -19,6 +66,10 @@ input {
 }
 p {
   font-size: $font-size-lg;
+}
+
+.p-large {
+  font-size: $font-size-base * 2;
 }
 .p-muted {
   font-size: $font-size-base;

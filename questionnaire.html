@@ -6,12 +6,12 @@
     <link href="/style/dist.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
+    <div class="container mb-8">
       <div class="row">
         <div
           class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3"
         >
-          <div class="row mb-5">
+          <div class="row mb-7">
             <div
               class="col-12 d-flex justify-content-center align-items-center"
             >
@@ -24,23 +24,26 @@
           <form>
             <div class="form-row">
               <div class="col-8">
-                <input type="text" class="form-control" placeholder="Name" />
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" />
               </div>
               <div class="col-4">
+                <label for="birthdate">Birthdate</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Birthdate"
+                  placeholder="mmddyyyy"
+                  id="birthdate"
                 />
               </div>
             </div>
           </form>
 
           <div class="row">
-            <div class="col-6 col-sm-4 col-xl-3">
-              <p class="d-inline text-muted">You identify as:</p>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-1">
+              <p class="d-inline">You identify as:</p>
             </div>
-            <div class="col-6 col-sm-8 col-xl-9">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-4">
               <div
                 class="custom-control custom-radio d-inline mr-sm-4 mr-md-6 mr-lg-8"
               >
@@ -54,6 +57,8 @@
                   >Female</label
                 >
               </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-4">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -68,11 +73,11 @@
             </div>
           </div>
 
-          <div class="row mb-7">
-            <div class="col-6 col-sm-4 col-xl-3">
-              <p class="d-inline text-muted">Looking for:</p>
+          <div class="row mt-4 mb-7">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4 mb-1">
+              <p class="d-inline">Looking for:</p>
             </div>
-            <div class="col-6 col-sm-8 col-xl-9">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
               <div
                 class="custom-control custom-radio d-inline mr-sm-4 mr-md-6 mr-lg-8"
               >
@@ -86,6 +91,8 @@
                   >Female</label
                 >
               </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -100,10 +107,10 @@
             </div>
           </div>
           <div class="row mb-7">
-            <div class="col-12">
-              <p class="text-muted">Relationship Status:</p>
+            <div class="col-12 mb-1">
+              <p>Relationship Status:</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -116,7 +123,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -128,7 +135,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -140,7 +147,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -154,10 +161,10 @@
             </div>
           </div>
           <div class="row mb-7">
-            <div class="col-12">
-              <p class="text-muted">Do you have any kids?</p>
+            <div class="col-12 mb-1">
+              <p>Do you have any kids?</p>
             </div>
-            <div class="col-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -170,7 +177,7 @@
                 >
               </div>
             </div>
-            <div class="col-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -186,12 +193,10 @@
           </div>
 
           <div class="row mb-7">
-            <div class="col-12">
-              <p class="text-muted">
-                Would you like to have any/additional kids in the future?
-              </p>
+            <div class="col-12 mb-1">
+              <p>Would you like to have any/additional kids in the future?</p>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -204,7 +209,7 @@
                 >
               </div>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -217,7 +222,7 @@
                 >
               </div>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
               <div class="custom-control custom-radio d-inline">
                 <input
                   type="radio"
@@ -232,10 +237,10 @@
             </div>
           </div>
           <div class="row mb-7">
-            <div class="col-12">
-              <p class="text-muted">How often do you smoke?</p>
+            <div class="col-12 mb-1">
+              <p>How often do you smoke?</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -248,7 +253,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -261,7 +266,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -274,7 +279,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -289,10 +294,10 @@
             </div>
           </div>
           <div class="row mb-7">
-            <div class="col-12">
-              <p class="text-muted">How often do you drink?</p>
+            <div class="col-12 mb-1">
+              <p>How often do you drink?</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -305,7 +310,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -318,7 +323,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -331,7 +336,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-radio">
                 <input
                   type="radio"
@@ -345,10 +350,8 @@
               </div>
             </div>
           </div>
-
-          <h4>Answer these questions honestly to get the best matches.</h4>
-          <div class="row mt-4">
-            <div class="col-12">
+          <div class="row">
+            <div class="col-12 mb-1">
               <p>How important is healthy eating to you?</p>
             </div>
             <div class="col-3">
@@ -452,7 +455,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-1">
               <p>How important are your spiritual/religious beliefs to you?</p>
             </div>
             <div class="col-3">
@@ -556,7 +559,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-1">
               <p>
                 How important is it for you to climb the ladder at your job and
                 get promotions?
@@ -663,7 +666,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-1">
               <p>How important is exercise or working out to you?</p>
             </div>
             <div class="col-3">
@@ -747,7 +750,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-1">
               <p>
                 How important is it to you to participate in spiritual/religious
                 activities?
@@ -854,7 +857,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-1">
               <p>
                 How important is it that other people notice and admire your
                 accomplishments?
@@ -960,12 +963,14 @@
               >
             </div>
           </div>
-
-          <p>Which political topics are <em>most</em> important to you?</p>
-          <p class="text-muted p-muted">(Choose 2)</p>
-
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p>Which political topics are <em>most</em> important to you?</p>
+              <p class="text-muted p-muted">(Choose 2)</p>
+            </div>
+          </div>
           <div class="row mb-7">
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -978,7 +983,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -986,11 +991,11 @@
                   id="most-health-care"
                 />
                 <label class="custom-control-label" for="most-health-care"
-                  >Affordable Health Care</label
+                  >Health Care</label
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1002,7 +1007,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1014,7 +1019,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1026,7 +1031,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1039,11 +1044,14 @@
               </div>
             </div>
           </div>
-
-          <p>Which political topics are <em>least</em> important to you?</p>
-          <p class="text-muted p-muted">(Choose 2)</p>
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p>Which political topics are <em>least</em> important to you?</p>
+              <p class="text-muted p-muted">(Choose 2)</p>
+            </div>
+          </div>
           <div class="row mb-7">
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1056,7 +1064,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1064,11 +1072,11 @@
                   id="least-health-care"
                 />
                 <label class="custom-control-label" for="least-health-care"
-                  >Affordable Health Care</label
+                  >Health Care</label
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1080,7 +1088,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1092,7 +1100,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1104,7 +1112,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1117,10 +1125,14 @@
               </div>
             </div>
           </div>
-          <p>What are your main interests?</p>
-          <p class="text-muted p-muted">(Choose 2)</p>
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p>What are your main interests?</p>
+              <p class="text-muted p-muted">(Choose 2)</p>
+            </div>
+          </div>
           <div class="row mb-7">
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1133,7 +1145,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1141,11 +1153,11 @@
                   id="least-health-care"
                 />
                 <label class="custom-control-label" for="least-health-care"
-                  >Watching tv or movies</label
+                  >Watch tv/movies</label
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1157,7 +1169,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1169,7 +1181,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1181,7 +1193,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1193,19 +1205,8 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
-              <div class="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="least-guns"
-                />
-                <label class="custom-control-label" for="least-guns"
-                  >Board/Card Games</label
-                >
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1217,7 +1218,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1229,7 +1230,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1241,7 +1242,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1253,7 +1254,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1265,13 +1266,29 @@
                 >
               </div>
             </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="least-guns"
+                />
+                <label class="custom-control-label" for="least-guns"
+                  >Board/Card Games</label
+                >
+              </div>
+            </div>
           </div>
-
-          <p>
-            Which spiritual/religious beliefs are closest to your own currently:
-          </p>
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p>
+                Which spiritual/religious beliefs are closest to your own
+                currently:
+              </p>
+            </div>
+          </div>
           <div class="row mb-7">
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1284,7 +1301,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1296,7 +1313,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1308,7 +1325,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1320,7 +1337,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1332,7 +1349,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1344,7 +1361,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1356,7 +1373,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1368,7 +1385,7 @@
                 >
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-xl-4">
+            <div class="col-xs-12 col-sm-6">
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -1405,10 +1422,8 @@
               </div>
             </div>
             <div class="col-md-3"></div>
-            <div class="col-12">
-              <a
-                href="matches.html"
-                class="btn btn-primary btn-lg d-flex justify-content-center mt-7"
+            <div class="col-12 text-center">
+              <a href="matches.html" class="btn btn-primary btn-lg px-8 mt-7"
                 >Continue</a
               >
             </div>
