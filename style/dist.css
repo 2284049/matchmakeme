@@ -11413,27 +11413,27 @@ h3 {
 
 .schedule-button {
   position: fixed;
-  top: 75px;
+  top: 98px;
   right: 5px;
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .schedule-button {
-    right: 20px;
+    right: 35px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .schedule-button {
-    right: 80px;
+    right: 120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .schedule-button {
-    right: 175px;
+    right: 230px;
   }
 }
 @media (min-width: 1200px) {
   .schedule-button {
-    right: 225px;
+    right: 325px;
   }
 }
 
@@ -11455,7 +11455,7 @@ p {
 }
 
 .p-large {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .p-muted {

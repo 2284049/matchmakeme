@@ -38,19 +38,19 @@ h1 {
 
 .schedule-button {
   position: fixed;
-  top: 75px;
+  top: 98px;
   right: 5px;
   @include media-breakpoint-only(sm) {
-    right: 20px;
+    right: 35px;
   }
   @include media-breakpoint-only(md) {
-    right: 80px;
+    right: 120px;
   }
   @include media-breakpoint-only(lg) {
-    right: 175px;
+    right: 230px;
   }
   @include media-breakpoint-only(xl) {
-    right: 225px;
+    right: 325px;
   }
 }
 .text-brand {
@@ -69,7 +69,7 @@ p {
 }
 
 .p-large {
-  font-size: $font-size-base * 2;
+  font-size: $font-size-base * 1.5;
 }
 .p-muted {
   font-size: $font-size-base;
