@@ -128,6 +128,7 @@ $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15%;
+$link-font-weight: $font-weight-bold;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 $font-family-brand: "Poppins";

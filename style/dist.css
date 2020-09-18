@@ -11375,7 +11375,7 @@ h3 {
 
 @media (max-width: 575.98px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 8px;
   }
 }
@@ -11460,6 +11460,10 @@ p {
 
 .p-muted {
   font-size: 1rem;
+}
+
+.btn-link {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=dist.css.map */
