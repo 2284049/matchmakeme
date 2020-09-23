@@ -25,24 +25,32 @@
                 Sign up for a free matchmaking account.
               </p>
               <div class="form-group">
-                <label for="email-input" class="lead font-sans-serif"
+                <label for="email-sign-up" class="lead font-sans-serif"
                   >Email address</label
                 >
-                <input type="email" class="form-control" id="email-input" />
+                <input type="email" class="form-control" id="email-sign-up" />
+                <p class="text-danger d-none" id="enter-email-error">
+                  Please enter your email address.
+                </p>
               </div>
               <div class="form-group">
-                <label for="password-input" class="lead font-sans-serif"
+                <label for="password-sign-up" class="lead font-sans-serif"
                   >Create a password</label
                 >
-                <input type="email" class="form-control" id="password-input" />
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password-sign-up"
+                />
+                <p class="text-danger d-none" id="password-error"></p>
               </div>
-              <a
+              <button
                 href="questionnaire.html"
                 class="btn btn-primary btn-lg font-sans-serif mt-5"
                 id="sign-up-button"
               >
                 Sign up
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -81,5 +89,13 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="/mostInsecurePasswords.js" defer></script>
+    <script src="/secondMostInsecurePasswords.js" defer></script>
+
+    <script src="/script.js" defer></script>
   </body>
 </html>
