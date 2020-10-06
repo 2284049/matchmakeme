@@ -66,11 +66,35 @@ $("#sign-up-button").click(function () {
     delete activeUser.socialProfiles[1].image["md"];
   }
 
+  const users = [user, activeUser];
+  const currentUsers = users
+    .map((user) => {
+      const currentUser = {
+        id: user.id,
+        email: user.email,
+        password: user.password,
+        createdAt: user.createdAt,
+        isActive: getIsActive(user),
+      };
+      return currentUser;
+    })
+    .filter((user) => {
+      return user.isActive === true;
+    });
+
+  const currentUser = currentUsers[0];
   if (passwordError === "" && emailError === "") {
-    console.log(user);
-    console.log(`Active User Properties: `, activeUser);
+    console.log(`The current user is: `, currentUser);
   }
 });
+
+function getIsActive(user) {
+  if (user.hasOwnProperty("isActive")) {
+    return user.isActive;
+  } else {
+    return false;
+  }
+}
 
 function makeDeepCopySafely(obj) {
   const str = JSON.stringify(obj);
