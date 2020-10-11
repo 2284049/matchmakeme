@@ -1,3 +1,7 @@
+$("#show-not-interested").click(function () {
+  $("#not-interested-button").removeClass("d-none");
+});
+
 $("#sign-up-button").click(function () {
   const emailInput = $("#email-sign-up-input").val();
   const email = emailInput.trim().toLowerCase();

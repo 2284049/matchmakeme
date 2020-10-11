@@ -24,25 +24,22 @@
 
           <a class="btn btn-link mb-7" href="matches.html" role="button"
             ><img
-            src="style/icons/chevron-left.svg"
-            width="20px"
-            class="mr-1 mb-1"
-          />Back to Matches</a
+              src="style/icons/chevron-left.svg"
+              width="20px"
+              class="mr-1 mb-1"
+            />Back to Matches</a
           >
           <div class="col-12 col-md-11 col-lg-10 col-xl-9">
             <button
               class="btn btn-primary px-6 d-flex float-right schedule-button"
               style="z-index: 1; box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.5)"
-            ><img
-            src="style/icons/heart.svg"
-            width="20px"
-            class="mr-2"
-          />
+            >
+              <img src="style/icons/heart.svg" width="20px" class="mr-2" />
               Schedule a date
             </button>
           </div>
           <div class="row">
-            <div class="col-12 col-sm-7 mb-2 mb-sm-8">
+            <div class="col-12 col-sm-7 mb-2 mb-sm-6">
               <img
                 src="style/Images/guy3.jpg"
                 width="100%"
@@ -51,20 +48,73 @@
               />
             </div>
             <div class="col-12 col-sm-5 d-inline">
-              <p class="p-large">ID: flying_cedar</p>
-              <p class="p-large mt-n2 mb-8">Age: 29</p>
+              <p class="p-large mb-2">ID: flying_cedar</p>
+              <p class="p-large mt-n2 mb-6">Age: 29</p>
             </div>
           </div>
-          <div class="row mb-8">
-            <div class="col-6 col-md-7 col-lg-8 col-xl-8">
-              <p>Relationship Status:</p>
-            </div>
-            <div class="col-6 col-md-5 col-lg-4 col-xl-4">
-              <p class="text-muted">Never married</p>
+          <div class="row mb-2">
+            <div class="col-12">
+              <p class="d-inline">Job field:</p>
+              <p class="text-muted d-inline ml-2">Architecture / Engineering</p>
             </div>
           </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <p class="d-inline">Relationship status:</p>
+              <p class="text-muted d-inline ml-2">Never married</p>
+            </div>
+          </div>
+          <div class="row mb-7">
+            <div class="col-12">
+              <p class="d-inline">Do you have any kids?</p>
+              <p class="text-muted d-inline ml-2">No</p>
+            </div>
+          </div>
+          <p class="p-large mb-3">Interests & Hobbies</p>
+          <ul>
+            <li><p class="mb-3">Photography</p></li>
+            <li><p class="mb-3">Religious activities</p></li>
+            <li><p class="mb-3">Hiking</p></li>
+            <li><p class="mb-3">International travel</p></li>
+            <li><p class="mb-7">Camping</p></li>
+          </ul>
 
-          <div class="row mb-8">
+          <p class="p-large mb-3">Things in Common</p>
+          <ul class="mb-8">
+            <li>
+              <p class="mb-3">
+                Living a health lifestyle is important to both of you.
+              </p>
+            </li>
+            <li><p class="mb-3">Both of you are Christian/Protestant.</p></li>
+            <li>
+              <p class="mb-3">
+                He would also like to have children in the future.
+              </p>
+            </li>
+            <li>
+              <p class="mb-3">You both have a bachelor's degree or higher.</p>
+            </li>
+            <li>
+              <p class="mb-3">
+                Racial injustice is an important issue to both of you.
+              </p>
+            </li>
+            <li><p class="mb-3">Both of you have one or more dogs.</p></li>
+            <li><p class="mb-3">Neither of you smoke.</p></li>
+            <li>
+              <p class="mb-3">Drinking weekly is typical for both of you.</p>
+            </li>
+
+            <li>
+              <p class="mb-3">
+                You both enjoy the following: traveling internationally,
+                camping, and photography.
+              </p>
+            </li>
+          </ul>
+
+          <!-- <div class="row mb-8">
             <div class="col-6 col-md-7 col-lg-8 col-xl-8">
               <p>Do you have any kids?</p>
             </div>
@@ -184,12 +234,38 @@
             <div class="col-6 col-md-5 col-lg-4 col-xl-4">
               <p class="text-muted">Christian / Protestant</p>
             </div>
+          </div> -->
+          <div class="custom-control custom-checkbox mt-5 mb-3">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="show-not-interested"
+            />
+            <label
+              class="custom-control-label text-muted"
+              for="show-not-interested"
+              >I'm not interested.</label
+            >
           </div>
-          
 
-          </div>
+          <button
+            type="button"
+            class="btn btn-danger mb-8 d-none"
+            id="not-interested-button"
+          >
+            Remove from matches
+          </button>
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="/script.js" defer></script>
   </body>
 </html>
