@@ -84,6 +84,7 @@ $("#sign-up-button").click(function () {
 
   const currentUser = currentUsers[0];
   if (passwordError === "" && emailError === "") {
+    window.location.href = "http://wet-grain.surge.sh/questionnaire.html";
     console.log(`The current user is: `, currentUser);
   }
 });
